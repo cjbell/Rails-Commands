@@ -59,7 +59,7 @@ Server
 	git init
 	git add .
 	git commit -m ""
-	git push remote master
+	git push -u origin master
 
 
 ==Heroku
