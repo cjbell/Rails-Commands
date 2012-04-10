@@ -1,17 +1,17 @@
-=Learning Rails Commands
+#Learning Rails Commands
 
-Create new app
+###Create new app
 	
 	rails new _name_ --skip-test-unit
 
-Generating
+###Generating
 
 	rails generate controller Foos --no-test-framework
 	rails generate model Foo title:string
 
-==Gems
+##Gems
 
-Modify gem file 
+###Modify gem file 
 	
 	group :development, :test do
 	  gem 'sqlite3', '1.3.5'
@@ -19,50 +19,49 @@ Modify gem file
 	  gem 'annotate', '~> 2.4.1.beta'
 	end
 
-Update gems
+###Update gems
 
 	bundle install --without production
 
-==RSpec
+##RSpec
 
-RSpec on install
+###RSpec on install
 	
 	rails generate rspec:install
 
-Run Tests
+###Run Tests
 
 	bundle exec rspec spec/
 
-==Rake / Database
+##Rake / Database
 
 	rake db:migrate
 	rake db:rollback VERSION
 	rake db:
 
-==Misc
+##Misc
 
-Annotate models
+###Annotate models
 
 	gem 'annotate', '~> 2.4.1.beta'
 	bundle exec annotate --position before
 
-Console
+###Console
 
 	rails console --sandbox
 
-Server 
+###Server 
 	
 	rails s
 
-==Git
+##Git
 
 	git init
 	git add .
 	git commit -m ""
 	git push -u origin master
 
-
-==Heroku
+##Heroku
 
 	heroku create --stack-cedar
 	git push heroku master
